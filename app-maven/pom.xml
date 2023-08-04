@@ -43,6 +43,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+		<groupId>org.mybatis</groupId>
+		<artifactId>mybatis</artifactId>
+		<version>3.5.7</version> <!-- 사용하는 MyBatis 버전에 맞게 변경 -->
+		</dependency>
 	</dependencies>
 
 	<build>

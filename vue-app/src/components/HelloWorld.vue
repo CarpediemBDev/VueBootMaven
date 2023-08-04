@@ -33,7 +33,6 @@
 </template>
 
 <script>
-import axios from 'axios'
 export default {
   name: 'HelloWorld',
   props: {
@@ -41,7 +40,7 @@ export default {
   },
   methods: {
     getData(){
-      axios.get('/api')
+      this.$axios.get('/api')
       .then((response) => {
         console.log(response)
       })
@@ -50,7 +49,7 @@ export default {
       })
     },
     findAll(){
-      axios.post('/findAll')
+      this.$axios.post('/findAll')
       .then((response) => {
         console.log(response)
       })

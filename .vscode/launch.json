@@ -9,6 +9,16 @@
             "projectName": "app",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-AppMavenApplication<app-maven>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.appmaven.AppMavenApplication",
+            "projectName": "app-maven",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
