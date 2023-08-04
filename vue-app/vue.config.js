@@ -4,7 +4,16 @@ module.exports = defineConfig({
   transpileDependencies: true,
   devServer: {
     port: 9090,   // you can change the port there
-
+    proxy:{
+      '/api':{
+        target,
+        changeOrigin:true
+      },
+      '/findAll':{
+        target,
+        changeOrigin:true
+      }
+    }
   },
- // outputDir: '../app/src/main/resources/static'
+  outputDir: '../app/src/main/resources/static'
 })
